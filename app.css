@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.card {
+	background: linear-gradient(to right, #ffffff, #e0dede);
+	/* Replace #ffffff and #808080 with your desired colors */
+	width: 300px;
+	height: 300px;
+	background-size: 200% 100%;
+	animation: gradientAnimation 3s linear infinite;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+@keyframes gradientAnimation {
+	0% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0 50%;
+	}
+}
+.image {
+	width: 100%;
+
+	height: 100px;
+}
+.image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.portrait-image {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.portrait-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+h1 {
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+h2 {
+	font-size: 18px;
+}
+p {
+	font-size: 16px;
+}
+time {
+	font-size: 16px;
+}
+.bottom {
+	display: flex;
+
+	align-items: center;
+	margin-top: 10px;
+	padding-top: 30px;
+}
+.text {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.text-div {
+	margin-left: 10px;
+}
